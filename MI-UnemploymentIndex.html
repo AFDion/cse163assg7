@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta Tag -->
+        <meta charset="utf-8">
+        <!-- CSS Stylesheet -->
+        <link rel="stylesheet" type="text/css" href="MI-UnemploymentStylesheet.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- D3.js Source -->
+        <script src="//d3js.org/d3.v4.min.js"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <script src="//d3js.org/topojson.v1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+        <title>Michigan Unemployment Rate</title>
+    </head>
+    <body id="main">
+        <h1 style = "text-align:center; color:steelblue"><bold>Michigan Unemployment Rate, 2022</bold></h1>
+        <!-- Your D3.js code for making a Bar Graph -->
+        <svg width="960" height="960" id = "mi-map"></svg>
+        <script type="text/javascript" src="MI-UnemploymentGeo.js"></script>
+        
+        <br>
+        
+        <button type="button" class="btn btn-light" onclick="updateData('light')" >Light Mode</button>
+        <button type="button" class="btn btn-dark" onclick="updateData('dark')" >Dark Mode</button>
+        <button type="button" class="btn btn-danger" onclick="hideStroke()" >Toggle County Boundary</button>
+        <!-- Submission Info -->
+        <h4 id = "adaptText">Assignment 7</h4>
+        <h4 id = "adaptText">Created by Andre Dion</h4>
+
+        <h4 id = "adaptText">Description:</h4>
+        <p id = "adaptText">Michigan Population Density.</p>
+        <!-- Create a list using <ul> and <li> tag -->   
+        <!--<h4>Files Submitted:</h4>
+
+        <ul>
+            <li>MultiLineindex.html</li>
+            <li>MultiLineChart.js</li>
+            <li>MultiLinestylesheet.css</li>
+        </ul>
+        <h4> Sources: </h4>
+
+          <li>Bar Graph Example</li>
+          <li>D3 API Reference</li>
+          <li><a href ="http://big-elephants.com/2014-06/unrolling-line-charts-d3js/" target = "_blank">Notes on Animating Line Charts with D3</a></li>
+          <li><a href ="http://bl.ocks.org/mbostock/3883245" target = "_blank">Line Chart by Mike Bostock</a></li>
+          -->
+    </body>
+</html>
